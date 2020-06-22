@@ -4,6 +4,7 @@ namespace Webmen\AMP\Extensions;
 
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Core\Extension;
+use SilverStripe\View\Requirements;
 use Webmen\AMP\Control\AMPDirector;
 
 /**
