@@ -15,6 +15,13 @@ class AMPPageControllerExtension extends Extension
         'amp'
     ];
 
+    public function onAfterInit()
+    {
+        if ($this->owner->getRequest()->param('Action') != 'amp') {
+            Requirements::insertHeadTags('<link rel="amphtml" href="' . $this->owner->AbsoluteLink('amp') . '">');
+        }
+    }
+
     public function amp()
     {
         return AMPDirector::singleton()->handle($this->owner);
