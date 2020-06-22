@@ -1,0 +1,29 @@
+{
+    "name": "thewebmen/silverstripe-amp",
+    "description": "Silverstripe module to create nested menus",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "menu",
+        "nested",
+        "links"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Rens Korswagen",
+        "email": "rens@webmen.nl"
+    }],
+    "require": {
+        "php": ">=7.0.0",
+        "silverstripe/cms": "^4.0"
+    },
+    "require-dev": {
+    },
+    "extra": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Webmen\\AMP\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+---
+Name: amp
+---
+SilverStripe\Core\Injector\Injector:
+  Webmen\AMP\Control\AMPDirector:
+    properties:
+      Middlewares:
+        AMPRemoveAttributesMiddleware: '%$Webmen\AMP\Middleware\AMPRemoveAttributesMiddleware'
+        AMPIframeReplacementMiddleware: '%$Webmen\AMP\Middleware\AMPIframeReplacementMiddleware'
+        AMPImageReplacementMiddleware: '%$Webmen\AMP\Middleware\AMPImageReplacementMiddleware'
